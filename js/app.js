@@ -1,19 +1,9 @@
-let navbar = document.createElement("nav");
-let container = document.createElement("div");
-let logo = document.createElement("a");
-let addBookBtn = document.createElement("button");
-let addBtnicon = document.createElement("i");
+let number = document.querySelector("#number");
+let click = document.querySelector("#click");
+let result = document.querySelector("#result");
 
-navbar.appendChild(container);
-container.appendChild(logo);
-container.appendChild(addBookBtn);
-addBookBtn.appendChild(addBtnicon);
-document.body.appendChild(navbar);
+let str = "Your enter number is ";
 
-navbar.classList.add("navbar", "bg-body-tertiary");
-container.classList.add("container");
-logo.classList.add("navbar-brand", "h1", "my-0");
-addBookBtn.classList.add("btn", "btn-outline-secondary", "rounded");
-addBtnicon.classList.add("bi", "bi-plus-circle-fill");
-
-logo.innerText = "Note Book";
+click.addEventListener("click", () => {
+  result.innerText = 3 + parseInt(number.value);
+});
