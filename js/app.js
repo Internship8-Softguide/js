@@ -1,19 +1,10 @@
-let navbar = document.createElement("nav");
-let container = document.createElement("div");
-let logo = document.createElement("a");
-let addBookBtn = document.createElement("button");
-let addBtnicon = document.createElement("i");
-
-navbar.appendChild(container);
-container.appendChild(logo);
-container.appendChild(addBookBtn);
-addBookBtn.appendChild(addBtnicon);
-document.body.appendChild(navbar);
-
-navbar.classList.add("navbar", "bg-body-tertiary");
-container.classList.add("container");
-logo.classList.add("navbar-brand", "h1", "my-0");
-addBookBtn.classList.add("btn", "btn-outline-secondary", "rounded");
-addBtnicon.classList.add("bi", "bi-plus-circle-fill");
-
-logo.innerText = "Note Book";
+let str = "hello,WORLD,javascript";
+console.log(str.length);
+console.log(str.charAt(4));
+console.log(str.indexOf("l"));
+console.log(str.lastIndexOf("l"));
+console.log(str.slice(7, 11));
+console.log(str.toLocaleLowerCase());
+console.log(str.toUpperCase());
+console.log(str.split(" "));
+console.log(["a", "b"].join("-"));
